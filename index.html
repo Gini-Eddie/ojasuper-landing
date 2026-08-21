@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#06130f">
+    <title>OjaSuper — Autonomous Offline AI Business OS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="landing.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="brand">
+                <span class="brand-mark">OS</span>
+                <span class="brand-name">OjaSuper</span>
+            </div>
+            <div class="nav-links">
+                <a href="#features">Features</a>
+                <a href="#architecture">Architecture</a>
+                <a href="#demo">Demo</a>
+                <a href="https://github.com" target="_blank" class="nav-btn">GitHub Repo</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container hero-content">
+            <div class="badge">Built for Local-First Business Operations</div>
+            <h1>Run Your Business with Just Your Voice. <br><span class="accent-text">100% Offline.</span></h1>
+            <p class="hero-subtext">
+                OjaSuper is an autonomous AI Business Operating System designed for trade and retail environments. Record sales, track inventory, and calculate profits in natural spoken English—without internet connectivity or cloud fees.
+            </p>
+            <div class="hero-actions">
+                <a href="#demo" class="btn btn-primary">Watch Demo</a>
+                <a href="#architecture" class="btn btn-secondary">Explore Architecture</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Value Props Grid -->
+    <section id="features" class="section">
+        <div class="container">
+            <div class="section-heading">
+                <h2>Why OjaSuper?</h2>
+                <p>Engineered for high-friction, low-connectivity retail workflows.</p>
+            </div>
+            <div class="grid grid-3">
+                <div class="card">
+                    <div class="card-icon">🎙️</div>
+                    <h3>Voice-First Interaction</h3>
+                    <p>Hands busy unpacking goods or serving customers? Speak naturally: <em>"Sold 5 bags of rice for ₦30,000"</em> and let OjaSuper handle the rest.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">⚡</div>
+                    <h3>Zero Cloud Dependency</h3>
+                    <p>Powered by local Whisper STT and lightweight local language models. Operates seamlessly during power or internet outages.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🛡️</div>
+                    <h3>Autonomous Safeguards</h3>
+                    <p>Equipped with a built-in Business Rules Engine preventing negative stock, unapproved discounts, or accidental duplicate records.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Architecture -->
+    <section id="architecture" class="section dark-section">
+        <div class="container">
+            <div class="section-heading">
+                <h2>System Architecture</h2>
+                <p>The 6-stage offline pipeline turning speech into verified ledger actions.</p>
+            </div>
+            <div class="pipeline">
+                <div class="pipe-step"><span>1</span> Audio Capture</div>
+                <div class="pipe-arrow">→</div>
+                <div class="pipe-step"><span>2</span> Local Whisper STT</div>
+                <div class="pipe-arrow">→</div>
+                <div class="pipe-step"><span>3</span> LLM Intent Extraction</div>
+                <div class="pipe-arrow">→</div>
+                <div class="pipe-step"><span>4</span> Rule Verification</div>
+                <div class="pipe-arrow">→</div>
+                <div class="pipe-step"><span>5</span> SQLite Transaction</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>&copy; 2026 OjaSuper. Autonomous Local Business OS.</p>
+        </div>
+    </footer>
+</body>
+</html>
