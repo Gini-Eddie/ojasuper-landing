@@ -7,7 +7,7 @@
     <title>OjaSuper — Autonomous Offline AI Business OS</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="landing.css">
 </head>
 <body>
@@ -22,7 +22,7 @@
                 <a href="#features">Features</a>
                 <a href="#architecture">Architecture</a>
                 <a href="#demo">Demo</a>
-                <a href="https://github.com" target="_blank" class="nav-btn">GitHub Repo</a>
+                <a href="https://github.com/merezki-11/OjaSuper" target="_blank" class="nav-btn">View GitHub</a>
             </div>
         </div>
     </nav>
@@ -30,62 +30,127 @@
     <!-- Hero Section -->
     <header class="hero">
         <div class="container hero-content">
-            <div class="badge">Built for Local-First Business Operations</div>
+            <div class="badge"><span class="pulse"></span> Offline-First Retail AI</div>
             <h1>Run Your Business with Just Your Voice. <br><span class="accent-text">100% Offline.</span></h1>
             <p class="hero-subtext">
-                OjaSuper is an autonomous AI Business Operating System designed for trade and retail environments. Record sales, track inventory, and calculate profits in natural spoken English—without internet connectivity or cloud fees.
+                OjaSuper is an autonomous AI Business Operating System designed for African MSMEs. Record sales, track inventory, and calculate profits in natural spoken English—without internet connectivity or cloud latency.
             </p>
             <div class="hero-actions">
-                <a href="#demo" class="btn btn-primary">Watch Demo</a>
-                <a href="#architecture" class="btn btn-secondary">Explore Architecture</a>
+                <a href="#demo" class="btn btn-primary">Watch the Demo</a>
+                <a href="#architecture" class="btn btn-secondary">How it Works</a>
             </div>
         </div>
     </header>
+
+    <!-- Interactive Demo / Showcase Section -->
+    <section id="demo" class="section dark-section">
+        <div class="container">
+            <div class="section-heading">
+                <h2>See OjaSuper in Action</h2>
+                <p>A seamless Single Page Application (SPA) designed for speed and simplicity.</p>
+            </div>
+            <div class="demo-container">
+                <!-- Browser Mockup Window -->
+                <div class="browser-window">
+                    <div class="browser-header">
+                        <div class="browser-dots">
+                            <span></span><span></span><span></span>
+                        </div>
+                        <div class="browser-url">localhost:8000/dashboard</div>
+                    </div>
+                    <!-- Placeholder for your actual app screenshot or video -->
+                    <div class="browser-content">
+                        <div class="demo-placeholder-content">
+                            <h3>"I sold 100 bags of rice for ₦250,000"</h3>
+                            <div class="demo-pulse"></div>
+                            <p>Whisper STT Processing Locally...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Value Props Grid -->
     <section id="features" class="section">
         <div class="container">
             <div class="section-heading">
                 <h2>Why OjaSuper?</h2>
-                <p>Engineered for high-friction, low-connectivity retail workflows.</p>
+                <p>Engineered to solve the realities of high-friction, low-connectivity retail workflows.</p>
             </div>
             <div class="grid grid-3">
                 <div class="card">
                     <div class="card-icon">🎙️</div>
                     <h3>Voice-First Interaction</h3>
-                    <p>Hands busy unpacking goods or serving customers? Speak naturally: <em>"Sold 5 bags of rice for ₦30,000"</em> and let OjaSuper handle the rest.</p>
+                    <p>Hands busy unpacking goods or serving customers? Speak naturally: <em>"We restocked 50 cartons of milk"</em> and let OjaSuper parse the intent.</p>
                 </div>
                 <div class="card">
                     <div class="card-icon">⚡</div>
                     <h3>Zero Cloud Dependency</h3>
-                    <p>Powered by local Whisper STT and lightweight local language models. Operates seamlessly during power or internet outages.</p>
+                    <p>Powered by local Whisper STT models and FastAPI. It operates flawlessly during power outages, server downtimes, or in dead zones.</p>
                 </div>
                 <div class="card">
                     <div class="card-icon">🛡️</div>
                     <h3>Autonomous Safeguards</h3>
-                    <p>Equipped with a built-in Business Rules Engine preventing negative stock, unapproved discounts, or accidental duplicate records.</p>
+                    <p>Built-in Business Rules Engine prevents negative stock, alerts on low margins, and auto-creates missing inventory items on the fly.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">📊</div>
+                    <h3>Real-Time Ledger</h3>
+                    <p>Every transaction instantly updates your gross profit, total revenue, and inventory count on a dynamic Single Page Application.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">⌨️</div>
+                    <h3>Fallback Text Input</h3>
+                    <p>In a noisy market? Instantly switch from voice recording to typing text commands through the same intelligent AI pipeline.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">📱</div>
+                    <h3>Cross-Device Sync</h3>
+                    <p>Run the backend securely on a local shop laptop, and access the fast, responsive dashboard from any smartphone connected to the shop's WiFi.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Technical Architecture -->
-    <section id="architecture" class="section dark-section">
+    <section id="architecture" class="section architecture-section">
         <div class="container">
             <div class="section-heading">
-                <h2>System Architecture</h2>
-                <p>The 6-stage offline pipeline turning speech into verified ledger actions.</p>
+                <h2>Under the Hood</h2>
+                <p>A 5-stage offline pipeline turning raw speech into verified database ledger actions in milliseconds.</p>
             </div>
+
             <div class="pipeline">
-                <div class="pipe-step"><span>1</span> Audio Capture</div>
-                <div class="pipe-arrow">→</div>
-                <div class="pipe-step"><span>2</span> Local Whisper STT</div>
-                <div class="pipe-arrow">→</div>
-                <div class="pipe-step"><span>3</span> LLM Intent Extraction</div>
-                <div class="pipe-arrow">→</div>
-                <div class="pipe-step"><span>4</span> Rule Verification</div>
-                <div class="pipe-arrow">→</div>
-                <div class="pipe-step"><span>5</span> SQLite Transaction</div>
+                <div class="pipe-card">
+                    <div class="step-num">1</div>
+                    <h4>Audio Capture</h4>
+                    <p>Browser records audio via WebRTC and sends the blob to FastAPI.</p>
+                </div>
+                <div class="pipe-arrow"></div>
+                <div class="pipe-card">
+                    <div class="step-num">2</div>
+                    <h4>Whisper STT</h4>
+                    <p>Local AI model converts the raw audio payload into highly accurate text.</p>
+                </div>
+                <div class="pipe-arrow"></div>
+                <div class="pipe-card">
+                    <div class="step-num">3</div>
+                    <h4>LLM Extraction</h4>
+                    <p>Small language model identifies intent (Sale, Restock) and parameters.</p>
+                </div>
+                <div class="pipe-arrow"></div>
+                <div class="pipe-card">
+                    <div class="step-num">4</div>
+                    <h4>Rules Engine</h4>
+                    <p>Validates stock logic, price overrides, and fuzzy-matches item names.</p>
+                </div>
+                <div class="pipe-arrow"></div>
+                <div class="pipe-card">
+                    <div class="step-num">5</div>
+                    <h4>SQLite Action</h4>
+                    <p>Pydantic schemas execute CRUD operations and log audit trails securely.</p>
+                </div>
             </div>
         </div>
     </section>
@@ -93,7 +158,14 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container footer-content">
-            <p>&copy; 2026 OjaSuper. Autonomous Local Business OS.</p>
+            <div class="brand">
+                <span class="brand-mark">OS</span>
+                <span class="brand-name" style="color: #fff;">OjaSuper</span>
+            </div>
+            <p>Built for the 2026 AI Hackathon.</p>
+            <div class="footer-links">
+                <a href="https://github.com/merezki-11/OjaSuper" target="_blank">GitHub Repository</a>
+            </div>
         </div>
     </footer>
 </body>
